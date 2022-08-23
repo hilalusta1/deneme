@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.kat1kapi = new System.Windows.Forms.PictureBox();
             this.kat2kapi = new System.Windows.Forms.PictureBox();
@@ -85,6 +86,7 @@
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.kabin = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kat1kapi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kat2kapi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solkapikat3)).BeginInit();
@@ -714,6 +716,10 @@
             this.kabin.TabIndex = 55;
             this.kabin.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -871,5 +877,6 @@
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox kabin;
+        private System.Windows.Forms.Timer timer1;
     }
 }
